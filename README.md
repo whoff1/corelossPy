@@ -15,7 +15,7 @@ pip install numpy matplotlib scipy
 
 File Structure
 
-The script expects the core loss data files to be located in a specific directory (e.g., C:/Users/wagne/Desktop/Py/coreloss/50x600/). The files should be in .tab format, with the first column representing the magnetic flux density (B) and the second column representing the power loss (P) at different magnetic flux densities.
+The script expects the core loss data files to be located in a specific directory (e.g., C:/Users/.../coreloss/50x600/). The files should be in .tab format, with the first column representing the magnetic flux density (B) and the second column representing the power loss (P) at different magnetic flux densities.
 
 Functionality
 
@@ -47,7 +47,7 @@ The fitted parameters are printed and stored in the parameters list for each fre
 
 Example Usage
 
-Ensure the core loss data files are placed in the directory specified in the script (e.g., C:/Users/coreloss/50x600/). Once the script is executed, it will automatically process the files, fit the model, and display the plots.
+Ensure the core loss data files are placed in the directory specified in the script (e.g., C:/Users/.../coreloss/50x600/). Once the script is executed, it will automatically process the files, fit the model, and display the plots.
 
 Plotting
 
@@ -57,7 +57,7 @@ Adjustments
 
 You can modify the path in the script to point to a different directory containing your .tab files. The script will scan the directory, extract the data, and fit the model accordingly.
 
-The spredsheet compares the coefficients obtained with this python code and coefficients using Excel Solver for the same iron loss data.
+The spredsheet available in the repository compares the coefficients obtained with this python code and coefficients using Excel Solver for the same iron loss data.
 
 License
 
