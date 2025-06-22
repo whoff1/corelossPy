@@ -22,18 +22,18 @@ from scipy.optimize import least_squares
 #np.isinf(u).any()
 
 # sequece to extract data from txt, tab or csv file
-# corelossdata = open(r"C:\Users\wagne\Desktop\coreloss\50x600\BP50Hz.tab")#, "r")
+# corelossdata = open(r"C:\Users\...\50x600\BP50Hz.tab")#, "r")
 # dataextract = list(csv.reader(corelossdata, delimiter=' ')) #slip two column by space delimiter
 # a = np.array(dataextract[1:][1:]) #get B and P values after first line
 # corelossdata.close()
 # sequece to extract data from txt, tab or csv file
 
 # using numpy to extract data from txt, tab or csv file
-#corelossdata = np.genfromtxt(r"C:\Users\wagne\Desktop\coreloss\50x600\BP50Hz.tab", delimiter=" ", skip_header=1)
+#corelossdata = np.genfromtxt(r"C:\Users\...\50x600\BP50Hz.tab", delimiter=" ", skip_header=1)
 
 #Check files inside specific folder path
 #------------------------------------------------------------------
-# path = 'C:/Users/wagne/Desktop/coreloss/50x600/'
+# path = 'C:/Users/.../50x600/'
 # files = []
 # # r=root, d=directories, f = files
 # for r, d, f in os.walk(path):
@@ -42,13 +42,13 @@ from scipy.optimize import least_squares
 #             files.append(os.path.join(r, file))
 # for f in files:
 #     print(f)
-# print(glob.glob('C:/Users/wagne/Desktop/coreloss/50x600/*.tab'))
+# print(glob.glob('C:/Users/.../50x600/*.tab'))
 #------------------------------------------------------------------
 
 #dataname = ("BP" + str(frequency) + "Hz")
-#filepath = (r"C:/Users/wagne/Desktop/coreloss/50x600/" + str(dataname) + r".tab")
+#filepath = (r"C:/Users/.../50x600/" + str(dataname) + r".tab")
 
-listfiles = glob.glob('C:/Users/wagne/Desktop\Py\coreloss/50x600/*.tab') #create list with files inside the path
+listfiles = glob.glob('C:/Users/.../50x600/*.tab') #create list with files inside the path
 
 listBP = [] #declaring index variable to recreate list after data extraction
 listfreq = [] #declaring index variable to recreate list after data extraction
